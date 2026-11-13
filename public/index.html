@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pyramid Architects | Surat</title>
+<meta name="description" content="Pyramid is an architecture and design research studio based in Surat, Gujarat, led by Hardik Golakiya and Tejas Dabhi.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Pyramid Architects">
+<meta property="og:description" content="Architecture, interior design and civil works from Surat, Gujarat.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/brand/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#EDE6D6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#EDE6D6;--ink:#2A2725;--line:rgba(42,39,37,.16);--sans:"Familjen Grotesk",system-ui,sans-serif;--serif:"Instrument Serif",Georgia,serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--sand) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+header img{height:30px;width:auto;display:block}
+nav{display:flex;gap:28px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;opacity:.75}nav a:hover{opacity:1}
+.hero{padding:clamp(64px,12vw,140px) 0 clamp(48px,8vw,96px)}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.65;margin-bottom:28px}
+.hero img{width:min(760px,100%);height:auto;display:block}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.4vw,72px);line-height:1;letter-spacing:-.02em;margin-top:clamp(36px,6vw,72px);max-width:16ch}
+section{padding:clamp(56px,9vw,112px) 0;border-top:1px solid var(--line)}
+h2{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;opacity:.65;margin-bottom:32px}
+.about{display:grid;gap:32px;grid-template-columns:1fr}
+.about p{font-family:var(--serif);font-size:clamp(24px,3vw,38px);line-height:1.15;letter-spacing:-.01em;max-width:30ch}
+.about .body{font-family:var(--sans);font-size:17px;line-height:1.6;max-width:56ch;display:grid;gap:16px;letter-spacing:0}
+.founders{display:grid;gap:clamp(28px,4vw,56px);grid-template-columns:1fr}
+.card{display:grid;gap:20px;align-content:start}
+.card img{width:min(240px,60vw);aspect-ratio:1;border-radius:50%;object-fit:cover;display:block}
+.card h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,44px);line-height:1;letter-spacing:-.01em}
+.role{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:-8px}
+.card p{max-width:46ch}
+ul{list-style:none;padding:0;display:grid;gap:0;grid-template-columns:1fr}
+li{padding:18px 0;border-bottom:1px solid var(--line);display:flex;gap:20px;font-size:clamp(20px,2.2vw,26px);letter-spacing:-.01em}
+li span:first-child{font-size:12px;letter-spacing:.14em;opacity:.5;padding-top:.7em;min-width:2em}
+li small{display:block;font-size:15px;opacity:.7;margin-top:4px;letter-spacing:0;max-width:60ch}
+footer{background:var(--ink);color:var(--sand);padding:clamp(48px,8vw,96px) 0 40px}
+footer img{height:56px;width:auto;display:block;margin-bottom:32px}
+footer p{font-family:var(--serif);font-size:clamp(28px,4vw,52px);line-height:1.05;max-width:18ch}
+footer dl{display:grid;gap:28px;margin-top:48px;grid-template-columns:1fr}footer dt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.55;margin-bottom:6px}footer dd{margin:0;font-size:clamp(18px,2vw,22px);line-height:1.4}footer dd a{text-decoration:none;border-bottom:1px solid rgba(237,230,214,.3)}footer dd a:hover{border-color:var(--sand)}footer address{font-style:normal}
+footer small{display:block;margin-top:56px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.55}
+@media(min-width:860px){
+ footer dl{grid-template-columns:1fr 1fr;column-gap:64px}
+ .about{grid-template-columns:1.1fr 1fr;gap:64px}
+ .founders{grid-template-columns:1fr 1fr}
+ ul{grid-template-columns:1fr 1fr;column-gap:64px}
+}
+@media(max-width:560px){nav{gap:16px;font-size:11px}}
+@media(prefers-reduced-motion:no-preference){.hero img,.hero h1,.eyebrow{animation:up .9s cubic-bezier(.22,1,.36,1) both}.hero h1{animation-delay:.12s}@keyframes up{from{opacity:0;transform:translateY(14px)}}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="#top" aria-label="Pyramid Architects, home"><img src="/brand/logo-mark.svg" alt="Pyramid mark" width="34" height="30"></a>
+  <nav aria-label="Primary"><a href="#about">About</a><a href="#founders">Founders</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <p class="eyebrow">Surat, Gujarat</p>
+  <img src="/brand/logo-wordmark.svg" alt="Pyramid" width="753" height="217">
+  <h1>Architecture, interiors and civil works.</h1>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <h2>About us</h2>
+  <div class="about">
+    <p>An architecture and design research studio, led by two principals.</p>
+    <div class="body">
+      <span>Pyramid is a firm of experienced professionals offering comprehensive services in architecture, interior design and civil works. Our investigations revolve around the creation of a rich and thoughtful edge between inside and outside, using light as a medium, and warm, natural materials to accentuate a sense of place.</span>
+      <span>Minimalist, futuristic design sets our residential, commercial and restaurant spaces apart, built with natural, valued materials and a promising contemporary outlook.</span>
+    </div>
+  </div>
+</div></section>
+
+<section id="founders"><div class="wrap">
+  <h2>Co-founders</h2>
+  <div class="founders">
+    <article class="card">
+      <img src="/team/hardik-golakiya-600.webp" alt="Hardik Golakiya" width="600" height="600" loading="lazy">
+      <h3>Hardik Golakiya</h3>
+      <p class="role">Co-founder, principal</p>
+      <p>Delivers contemporary projects that are minimalist, comfortable and welcoming, without being cluttered or dark. He firmly believes that a good client relationship improves the creative process and confidence.</p>
+    </article>
+    <article class="card">
+      <img src="/team/tejas-dabhi-600.webp" alt="Tejas Dabhi" width="600" height="600" loading="lazy">
+      <h3>Tejas Dabhi</h3>
+      <p class="role">Co-founder, principal</p>
+      <p>A dynamic and promising planner and designer whose work continuously evolves around artistic design. He believes design is a process of creating comfort, with a strategic approach to unique expectations.</p>
+    </article>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Services</h2>
+  <ul>
+    <li><span>01</span><div>Architecture</div></li>
+    <li><span>02</span><div>Interior Design</div></li>
+    <li><span>03</span><div>Residential Designing</div></li>
+    <li><span>04</span><div>Estimation &amp; Costing</div></li>
+    <li><span>05</span><div>Construction</div></li>
+    <li><span>06</span><div>Landscape Designing</div></li>
+    <li><span>07</span><div>Restaurants<small>Designed and operated restaurants across Gujarat and Pune.</small></div></li>
+    <li><span>08</span><div>Product design<small>Pyramid Artistry, a Surat and Pune based design house for movables.</small></div></li>
+  </ul>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <img src="/brand/logo-mark-white.svg" alt="" width="63" height="56">
+  <p>Let&rsquo;s talk about your space.</p>
+  <dl>
+    <div><dt>Email</dt><dd><a href="mailto:pyramidarchitects113@gmail.com">pyramidarchitects113@gmail.com</a></dd></div>
+    <div><dt>Phone</dt><dd><a href="tel:+919714111000">+91 97141 11000</a></dd></div>
+    <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/pyramidarchitectsindia/" target="_blank" rel="noopener">@pyramidarchitectsindia</a></dd></div>
+    <div><dt>Studio</dt><dd><address>Aura, beside Bankers Hospital,<br>B/h Shardayatan School, Piplod,<br>Surat 395007</address></dd></div>
+  </dl>
+  <small>&copy; Pyramid Architects, Surat &middot; Full website coming soon</small>
+</div></footer>
+</body>
+</html>
