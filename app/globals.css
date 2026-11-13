@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Tokens: spec/02-design-system/tokens.css */
+:root {
+  --color-sand: #ede6d6;
+  --color-ink: #2a2725;
+  --color-night: #1c398e;
+  --background: #ffffff;
+  --foreground: #171717;
+  --placeholder: #d8d1c2;          /* blank asset slot fill (client assets come later) */
+  --placeholder-dark: #3a3633;
+  --cloud-mask: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 15%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.9) 42%, #000 50%);
+  --ease-signature: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --font-sans: var(--font-familjen-grotesk);
+  --font-serif: var(--font-instrument-serif);
+  --color-sand: #ede6d6;
+  --color-ink: #2a2725;
+  --color-night: #1c398e;
+  --color-status: #3fa85b;
+  --color-status-soft: #9ed8a8;
+  --color-placeholder: var(--placeholder);
+  --color-placeholder-dark: var(--placeholder-dark);
+  --tracking-about: -0.045em;
+  --tracking-marquee: -0.07em;
+  --tracking-brand: -0.055em;
+  --ease-signature: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* phone landscape */
+@custom-variant ls (@media (orientation: landscape) and (max-height: 500px) and (max-width: 1023px));
+
+html { scroll-behavior: smooth; scroll-padding-top: 1rem; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+section[id] { scroll-margin-top: 20px; }
+body { background: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+
+/* Text reveal helpers (spec/03-motion/text-reveal-and-hover-reveal.md) */
+[data-reveal-01] { visibility: hidden; }
+[data-reveal-01] > * { margin-bottom: -0.18em; }
+[data-reveal-01] .word-mask, [data-reveal-01] .char-mask { vertical-align: top; }
+[data-reveal-01] .line-mask, [data-reveal-01] .word-mask, [data-reveal-01] .char-mask { overflow-clip-margin: 0.06em; overflow: clip; }
+[data-reveal-01] .line-mask > *, [data-reveal-01] .word-mask > *, [data-reveal-01] .char-mask > * { will-change: transform; padding-bottom: 0.18em; }
+@media (prefers-reduced-motion: reduce) { [data-reveal-01] { visibility: visible; } }
+
+[data-hover-reveal] { vertical-align: top; cursor: pointer; display: inline-block; }
+.hover-reveal-track { line-height: inherit; display: grid; overflow: hidden; }
+.hover-reveal-line { white-space: pre; grid-area: 1 / 1; display: block; }
+.hover-reveal-char { will-change: transform; display: inline-block; }
+
+/* Rotate warning (/tour, portrait <= 1024px) */
+.rotate-device-warning { display: none; }
+@media (orientation: portrait) and (max-width: 1024px) { .rotate-device-warning { display: flex; } }
